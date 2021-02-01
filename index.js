@@ -1,13 +1,3 @@
-function copyToClipboard(value) {
-  const element = document.createElement("textarea");
-
-  element.value = value;
-  document.body.appendChild(element);
-  element.select();
-  document.execCommand("copy");
-  document.body.removeChild(element);
-}
-
 function search(regex) {
   console.log(regex);
   const items = document.querySelectorAll(".title");
@@ -41,7 +31,7 @@ cards.forEach(function (card) {
   let initialValue = card.querySelector(".title").innerHTML;
 
   card.addEventListener("click", () => {
-    copyToClipboard(value);
+    navigator.clipboard.writeText(value);
     card.querySelector(".title").innerHTML = "скопировано";
   });
 
