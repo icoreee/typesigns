@@ -2,22 +2,30 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Набор типографских символов, знаков препинания и пробелом">
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="description"
+      content="Набор типографских символов, знаков препинания и пробелом"
+    />
     <title>Типографские символы</title>
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:600|PT+Serif&amp;subset=cyrillic"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-
     <h1>Типографские символы</h1>
 
     <div class="search-form">
-      <input type="text" oninput="search(this.value)" placeholder="Поиск" autofocus>
-      <button style="display: none;" onclick="resetSearch()">Очистить</button>
+      <input
+        type="text"
+        oninput="search(this.value)"
+        placeholder="Поиск"
+        autofocus
+      />
+      <button style="display: none" onclick="resetSearch()">Очистить</button>
     </div>
 
     <div class="card copy" data-value="—">
@@ -47,12 +55,16 @@
 
     <button class="card" data-value="«»">
       <span class="title">кавычки-елочки</span>
-      <p class="example"><span class="sign">«</span>раз<span class="sign">»</span></span></p>
+      <p class="example">
+        <span class="sign">«</span>раз<span class="sign">»</span>
+      </p>
     </button>
 
     <button class="card" data-value="„“">
       <span class="title">кавычки-лапки</span>
-      <p class="example"><span class="sign">„</span>раз<span class="sign">“</span></p>
+      <p class="example">
+        <span class="sign">„</span>раз<span class="sign">“</span>
+      </p>
     </button>
 
     <button class="card" data-value="“”">
@@ -116,16 +128,12 @@
 
     <button class="card" data-value="™">
       <span class="title">знак торговой марки</span>
-      <p class="example">
-        All<span class="sign">™</span>
-      </p>
+      <p class="example">All<span class="sign">™</span></p>
     </button>
 
     <button class="card" data-value="®">
       <span class="title">знак копирайта</span>
-      <p class="example">
-        All<span class="sign">®</span>
-      </p>
+      <p class="example">All<span class="sign">®</span></p>
     </button>
 
     <button class="card" data-value="✓">
